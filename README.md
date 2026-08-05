@@ -72,22 +72,26 @@ npm run dev
 
 Abre tu navegador en: http://localhost:3333
 
-📂 Estructura Principal del Proyecto
-AdonisJSClean/
-├── app/                  # Controladores, Modelos, Validadores y lógica de AdonisJS
-├── config/               # Archivos de configuración de Adonis, base de datos y vistas
-├── public/               # Archivos estáticos públicos (imágenes, favicons, fuentes)
-├── resources/            # Activos del Frontend
-│   ├── css/              # Configuración y directivas de Tailwind CSS
-│   ├── js/               # Punto de entrada de scripts, HeroUI y Framer Motion
-│   └── views/            # Plantillas Edge / HTML principal
-├── start/                # Definición de rutas (routes.ts) y configuración global
-├── tailwind.config.js    # Configuración de Tailwind CSS y plugins de HeroUI
-├── vite.config.ts        # Configuración de Vite para integración con AdonisJS
-├── .env.example          # Plantilla de variables de entorno
-└── package.json          # Dependencias y scripts de ejecución
 
-⚡ Comandos Útiles de Desarrollo
+## 📂 Estructura Principal del Proyecto
+
+```text
+AdonisJSClean/
+├── app/                  # Controladores, Modelos, Validadores y lógica backend de AdonisJS
+├── config/               # Configuración global del framework, base de datos, CORS y Vite
+├── public/               # Archivos estáticos accesibles públicamente (imágenes, favicons, fuentes)
+├── resources/            # Activos y código fuente del Frontend
+│   ├── css/              # Directivas principales y estilos de Tailwind CSS
+│   ├── js/               # Configuración e inicialización de HeroUI y Framer Motion
+│   └── views/            # Plantillas Edge / HTML base de la aplicación
+├── start/                # Puntos de entrada del servidor (routes.ts, kernel.ts, validator.ts)
+├── tailwind.config.js    # Configuración de Tailwind CSS y plugins de HeroUI
+├── vite.config.ts        # Configuración de Vite para la compilación de activos y HMR
+├── .env.example          # Plantilla con las variables de entorno requeridas
+├── package.json          # Listado de dependencias y scripts del proyecto
+└── README.md             # Documentación principal del repositorio
+```
+##⚡ Comandos Útiles de Desarrollo
 
 ```bash
 # Servidor de desarrollo con recarga en tiempo real (Backend + Frontend Vite)
