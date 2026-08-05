@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "@heroui/styles"; 
+
+/* Indicar a Tailwind dónde buscar clases en tus archivos de React */
+@source "../app/**/*.tsx";
+@source "../app/**/*.ts";
+
+/* Incluir los componentes de Flowbite React para que compile sus estilos */
+@source "../../node_modules/flowbite-react/dist/esm/**/*.js";
