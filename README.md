@@ -91,7 +91,7 @@ AdonisJSClean/
 ├── package.json          # Listado de dependencias y scripts del proyecto
 └── README.md             # Documentación principal del repositorio
 ```
-##⚡ Comandos Útiles de Desarrollo
+## ⚡ Comandos Útiles de Desarrollo
 
 ```bash
 # Servidor de desarrollo con recarga en tiempo real (Backend + Frontend Vite)
@@ -110,5 +110,5 @@ npm run typecheck
 node ace test
 ```
 
-📄 Licencia
+## 📄 Licencia
 Este proyecto es de código abierto y está disponible bajo la licencia MIT. Úsalo libremente como base para tus proyectos web.
