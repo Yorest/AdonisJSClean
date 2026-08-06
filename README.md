@@ -1,6 +1,6 @@
 # ⚡ AdonisJS Clean Starter — Tailwind CSS + HeroUI + Framer Motion
 
-![AdonisJS](https://img.shields.io/badge/AdonisJS-v6-5A45FF?style=for-the-badge&logo=adonisjs&logoColor=white)
+![AdonisJS](https://img.shields.io/badge/AdonisJS-v7-5A45FF?style=for-the-badge&logo=adonisjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![HeroUI](https://img.shields.io/badge/HeroUI-000000?style=for-the-badge&logo=nextui&logoColor=white)
