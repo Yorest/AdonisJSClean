@@ -6,9 +6,10 @@
 ![HeroUI](https://img.shields.io/badge/HeroUI-000000?style=for-the-badge&logo=nextui&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-**AdonisJSClean** es una plantilla de inicio rápida y limpia (*clean starter*) pensada para comenzar proyectos web modernos con **AdonisJS (TypeScript)** sin perder tiempo en la configuración inicial del entorno frontend.
+**AdonisJSClean** es una plantilla de inicio rápida y limpia (_clean starter_) pensada para comenzar proyectos web modernos con **AdonisJS (TypeScript)** sin perder tiempo en la configuración inicial del entorno frontend.
 
 Incluye de fábrica un stack visual moderno y optimizado con **Vite**:
+
 - **[AdonisJS](https://adonisjs.com/):** Framework backend robusto para Node.js con TypeScript.
 - **[Tailwind CSS](https://tailwindcss.com/):** Framework de estilos utilitarios para un desarrollo visual rápido y responsive.
 - **[HeroUI](https://www.heroui.com/):** Biblioteca de componentes UI accesibles, personalizables y modernos (anteriormente NextUI).
@@ -31,12 +32,14 @@ Para ejecutar este proyecto localmente, asegúrate de tener instalado en tu ento
 Sigue estos pasos para inicializar el proyecto en tu máquina local:
 
 ### 1. Clonar el repositorio
+
 ```bash
 git clone [https://github.com/Yorest/AdonisJSClean.git](https://github.com/Yorest/AdonisJSClean.git)
 cd AdonisJSClean
 ```
 
 ### Instalar las dependencias
+
 ```bash
 npm install
 # o con tu gestor preferido:
@@ -51,11 +54,13 @@ cp .env.example .env
 ```
 
 ### 4. Generar la clave de seguridad de la aplicación
+
 AdonisJS requiere una clave criptográfica para firmar cookies y sesiones:
 
 ```bsh
 node ace generate:key
 ```
+
 (Opcional) Si tu proyecto utiliza base de datos local desde el inicio, ejecuta las migraciones:
 
 ```bsh
@@ -72,6 +77,26 @@ npm run dev
 
 Abre tu navegador en: http://localhost:3333
 
+### 6. Base de datos
+
+Para configurar MySQL u otra opcion ejecutar el comando y seleccione MySQL en la lista interactiva. (Puede agregarlo --forcesi necesita sobrescribir los archivos de configuración de la base de datos existentes).
+
+```bash
+node ace configure @adonisjs/lucid
+```
+
+Se actualiza tu .env con los detalles del servidor
+
+```text
+DB_CONNECTION=mysql
+MYSQL_HOST=localhost
+MYSQL_PORT=3306
+MYSQL_USER=root
+MYSQL_PASSWORD=example
+MYSQL_DB_NAME=example
+```
+
+Verifique su configuración **config/database.ts** para asegurarse de que el cliente esté configurado para usar mysql2
 
 ## 📂 Estructura Principal del Proyecto
 
@@ -91,6 +116,7 @@ AdonisJSClean/
 ├── package.json          # Listado de dependencias y scripts del proyecto
 └── README.md             # Documentación principal del repositorio
 ```
+
 ## ⚡ Comandos Útiles de Desarrollo
 
 ```bash
@@ -111,4 +137,5 @@ node ace test
 ```
 
 ## 📄 Licencia
+
 Este proyecto es de código abierto y está disponible bajo la licencia MIT. Úsalo libremente como base para tus proyectos web.
